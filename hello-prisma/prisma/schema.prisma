@@ -14,6 +14,8 @@ model User {
   id    Int     @default(autoincrement()) @id
   email String  @unique
   name  String?
+  healthID String @unique
+  insuranceID String? @unique
   posts Post[]
 }
 
