@@ -12,15 +12,18 @@ const graphql_1 = require("@nestjs/graphql");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const appointment_module_1 = require("./appointment/appointment.module");
+const user_module_1 = require("./user/user.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
         imports: [
             appointment_module_1.AppointmentModule,
+            user_module_1.UserModule,
             graphql_1.GraphQLModule.forRoot({
                 include: [
                     appointment_module_1.AppointmentModule,
+                    user_module_1.UserModule,
                 ],
                 debug: true,
                 playground: true,
