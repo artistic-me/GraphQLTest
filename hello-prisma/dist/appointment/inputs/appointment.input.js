@@ -25,6 +25,10 @@ __decorate([
     graphql_1.Field(),
     __metadata("design:type", Date)
 ], AppointmentInput.prototype, "apptmtdate", void 0);
+__decorate([
+    graphql_1.Field(),
+    __metadata("design:type", String)
+], AppointmentInput.prototype, "healthID", void 0);
 AppointmentInput = __decorate([
     graphql_1.InputType()
 ], AppointmentInput);
