@@ -19,6 +19,12 @@ export class UserService {
       where: userWhereUniqueInput,
     });
   }
+  
+   async userCountByHealthID(args: string): Promise<number | null> {
+    return this.prisma.user.count({
+      where: {healthID: args},
+    });
+  }
 
   async users(params: {
     skip?: number;
