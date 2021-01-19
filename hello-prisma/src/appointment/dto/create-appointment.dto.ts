@@ -13,5 +13,8 @@ export class AppointmentType {
 
     @Field()
     readonly apptmtdate: Date;
+    
+    @Field()
+    readonly healthID: string;
 
 }
