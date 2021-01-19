@@ -3,4 +3,5 @@ export declare class AppointmentType {
     readonly title: string;
     readonly content: string;
     readonly apptmtdate: Date;
+    readonly healthID: string;
 }
