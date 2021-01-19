@@ -11,6 +11,12 @@ export class UserResolver {
   async users() {
     return await this.userService.users({});
   }
+  
+    
+  @Query(() => Number)
+  async userCountByHealthID(@Args('input') input: string) {
+    return await this.userService.userCountByHealthID(input);
+  }
 
   @Mutation(() => UserType)
   async createUser(@Args('input') input: UserInput) {
