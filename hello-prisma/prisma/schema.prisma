@@ -33,4 +33,5 @@ model Appointment {
   title     String
   content   String
   apptmtdate DateTime
+  healthID String 
 }
