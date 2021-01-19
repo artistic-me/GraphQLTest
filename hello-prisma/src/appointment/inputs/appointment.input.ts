@@ -11,4 +11,7 @@ export class AppointmentInput {
 
   @Field()
   readonly apptmtdate: Date;
+  
+  @Field()
+  readonly healthID: string;
 }
