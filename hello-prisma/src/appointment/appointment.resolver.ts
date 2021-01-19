@@ -11,6 +11,11 @@ export class AppointmentResolver {
   async appointments() {
     return await this.appointmentService.appointments({});
   }
+  
+  @Query(() => Number)
+  async userCountByHealthID(@Args('input') input: string) {
+    return await this.userService.userCountByHealthID(input);
+  }
 
   @Mutation(() => AppointmentType)
   async createAppointment(@Args('input') input: AppointmentInput) {
