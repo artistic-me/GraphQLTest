@@ -9,7 +9,7 @@ import {UserModule} from './user/user.module';
 @Module({
   imports: [
     AppointmentModule,
-    UserModule,,
+    UserModule,
     ConversationModule,
     GraphQLModule.forRoot({
       include: [
