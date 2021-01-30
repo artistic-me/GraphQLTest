@@ -36,9 +36,9 @@ model Appointment {
   healthID String 
 }
 
-model PatientDocConversation {
+model Conversation {
   id        Int     @default(autoincrement()) @id
   message   String
   from      String
-  To        String
+  to        String
 }
