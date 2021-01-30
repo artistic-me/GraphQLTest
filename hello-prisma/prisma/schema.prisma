@@ -35,3 +35,10 @@ model Appointment {
   apptmtdate DateTime
   healthID String 
 }
+
+model PatientDocConversation {
+  id        Int     @default(autoincrement()) @id
+  message   String
+  from      String
+  To        String
+}
